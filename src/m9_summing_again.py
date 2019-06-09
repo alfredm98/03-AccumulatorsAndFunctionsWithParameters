@@ -41,7 +41,7 @@ def run_test_sum_powers():
     print('       answer:  ', answer)
 
     # Test 3:
-    expected = 13
+    expected = 14
     answer = sum_powers(3, 2)
     print('Test 3 expected:', expected)
     print('       answer:  ', answer)
