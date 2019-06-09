@@ -69,7 +69,7 @@ def sum_cosines(n):
     import math
     total = 0
     for k in range(n+1):
-            total = total + math.cos(k)
+        total = total + math.cos(k)
     return total
 
 
@@ -90,19 +90,19 @@ def run_test_sum_square_roots():
 
     # Test 1:
     expected = 11.854408
-    answer = run_test_sum_square_roots(5)
+    answer = sum_square_roots(5)
     print('Test 1 expected:', expected)
     print('       answer:  ', answer)
 
     # Test 2:
-    expected = 13
-    answer = run_test_sum_square_roots(7)
+    expected = 19.060167
+    answer = sum_square_roots(7)
     print('Test 2 expected:', expected)
     print('       answer:  ', answer)
 
     # Test 3:
-    expected = 9
-    answer = run_test_sum_square_roots(3)
+    expected = 5.8637033
+    answer = sum_square_roots(3)
     print('Test 3 expected:', expected)
     print('       answer:  ', answer)
 
@@ -130,10 +130,13 @@ def sum_square_roots(n):
     # ------------------------------------------------------------------
     import math
     total = 0
-    for k in range(n + 1):
-        total = total + math.sqrt(2*k)
+    for k in range(n+1):
+        total = total + math.sqrt(k*2)
+    return total
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
 main()
+
